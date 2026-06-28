@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Imasha Fernando | Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- =========================
+         Navigation
+    ========================== -->
+
     <nav>
 
         <div class="logo">
@@ -18,64 +25,208 @@
         </div>
 
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
 
     </nav>
-<!-- ================= HERO ================= -->
 
-<section class="hero">
+    <!-- =========================
+         Hero Section
+    ========================== -->
 
-    <div class="hero-content">
+    <section id="home" class="hero">
 
-        <p class="hello">Hello, I'm 👋</p>
+        <!-- Left Side -->
+        <div class="hero-content">
 
-        <h1 class="name">Imasha Fernando</h1>
+    <p class="hello">
+        Hello, I'm 👋
+    </p>
 
-        <h2 class="subtitle">
-            Information Systems Engineering Undergraduate
-        </h2>
+    <h1 class="name">
+        Imasha Fernando
+    </h1>
 
-        <h3 class="typing">
-            Business Analyst
-        </h3>
+    <h2 class="subtitle">
+        Information Systems Engineering Undergraduate
+    </h2>
 
-        <p class="description">
-            Passionate about Business Analysis,
-            Enterprise Systems and building
-            modern web applications.
-        </p>
+    <h3 class="typing">
+        Business Analyst
+    </h3>
 
-        <div class="hero-buttons">
+    <p class="description">
+        Passionate about Business Analysis, Enterprise Systems,
+        and building modern web applications.
+    </p>
 
-            <a href="#" class="btn btn-primary">
-                Download CV
-            </a>
+    <div class="hero-buttons">
 
-            <a href="#" class="btn btn-secondary">
-                View Projects
-            </a>
+        <a href="assets/cv/Imasha-Fernando-CV.pdf"
+           class="btn btn-primary"
+           target="_blank">
+            <i class="fa-solid fa-download"></i>
+            Download CV
+        </a>
+
+        <a href="#projects"
+           class="btn btn-secondary">
+            <i class="fa-solid fa-briefcase"></i>
+            View Projects
+        </a>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/ImashaFernando" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:your@email.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+
+    </div>
+
+</div> 
+
+        <!-- Right Side -->
+<div class="hero-image">
+    <div class="image-circle">
+        <img src="images/profile/profile.png" alt="Profile">
+    </div>
+</div>
+
+    </section>
+    <!-- =========================
+     About Section
+========================= -->
+
+<section id="about" class="about">
+
+    <div class="about-container">
+
+        <div class="about-right">
+
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                I am an Information Systems Engineering undergraduate at
+                SLIIT with a passion for Business Analysis, Enterprise
+                Systems, and Full Stack Web Development.
+            </p>
+
+            <div class="about-info">
+
+                <div>
+                    <span>Name</span>
+                    <p>Imasha Fernando</p>
+                </div>
+
+                <div>
+                    <span>University</span>
+                    <p>SLIIT</p>
+                </div>
+
+                <div>
+                    <span>Specialization</span>
+                    <p>Information Systems Engineering</p>
+                </div>
+
+                <div>
+                    <span>Location</span>
+                    <p>Sri Lanka</p>
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="hero-image">
+</section>
+<!-- =========================
+     Skills Section
+========================= -->
 
-        <img src="images/profile/profile.png" alt="Imasha Fernando">
+<section id="skills" class="skills">
+
+    <div class="section-heading">
+        <h2>My Skills</h2>
+        <p>Technologies and tools I use to build modern applications.</p>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Spring Boot</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>MySQL</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-git-alt"></i>
+            <h3>Git</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-figma"></i>
+            <h3>Figma</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+        </div>
 
     </div>
 
-</section>   
-
-
-<script src="js/script.js"></script>
+</section>
 
     <!-- JavaScript -->
 
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
