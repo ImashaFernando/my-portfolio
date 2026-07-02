@@ -13,6 +13,11 @@
     <meta name="author" content="Imasha Fernando">
     <title>Imasha Fernando | Portfolio</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -20,27 +25,33 @@
 
 <body>
 
+    <!-- Blueprint grid backdrop -->
+    <div class="grid-backdrop" aria-hidden="true"></div>
+
+    <!-- Cursor spotlight (drafting lamp) -->
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
     <!-- =========================
          Navigation
     ========================== -->
 
     <nav>
-
         <div class="logo">
-            &lt;IF/&gt;
+            <span class="logo-bracket">&lt;</span>IF<span class="logo-bracket">/&gt;</span>
         </div>
 
-        <ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul id="navList">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
             <li><a href="#certifications">Certifications</a></li>
-    
-
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
     <!-- =========================
@@ -52,491 +63,425 @@
         <!-- Left Side -->
         <div class="hero-content">
 
-    <p class="hello">
-        Hello, I'm 👋
-    </p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span>DWG NO. 001 — PROFILE</p>
 
-    <h1 class="name">
-        Imasha Fernando
-    </h1>
+            <h1 class="name">Imasha<br>Fernando</h1>
 
-    <h2 class="subtitle">
-        Information Systems Engineering Undergraduate
-    </h2>
+            <h2 class="subtitle">Information Systems<br>Engineering Undergraduate</h2>
 
-    <h3 class="typing">
-        Business Analyst
-    </h3>
+            <h3 class="role-tag">Business Analyst &middot; Java / Spring Boot Developer</h3>
 
-    <p class="description">
-        Passionate about Business Analysis, Enterprise Systems,
-        and building modern web applications.
-    </p>
+            <p class="description">
+                I design and build the systems that connect business needs to
+                working software — from requirements on a whiteboard to a
+                Spring Boot service in production.
+            </p>
 
-    <div class="hero-buttons">
+            <div class="hero-buttons">
+                <a href="cv/Imasha_Fernando_CV.pdf" class="btn btn-primary" download>
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fa-solid fa-diagram-project"></i> View Projects
+                </a>
+            </div>
 
-        <a href="cv/Imasha_Fernando_CV.pdf"
-        class="btn btn-primary"
-        download>
-        <i class="fa-solid fa-download"></i> Download CV </a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/imasha-fernando412" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/ImashaFernando" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:imashaudari412@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
 
-        <a href="#projects"
-           class="btn btn-secondary">
-            <i class="fa-solid fa-briefcase"></i>
-            View Projects
-        </a>
+        </div>
 
-    </div>
+        <!-- Right Side — technical drawing frame -->
+        <div class="hero-image">
+            <div class="dim-label dim-top">450.0</div>
+            <div class="dim-label dim-side">450.0</div>
 
-    <!-- Social Icons -->
-    <div class="social-icons">
+            <div class="drawing-frame">
+                <span class="corner tl"></span>
+                <span class="corner tr"></span>
+                <span class="corner bl"></span>
+                <span class="corner br"></span>
 
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
+                <div class="crosshair ch-h"></div>
+                <div class="crosshair ch-v"></div>
+                <div class="scan-ring" aria-hidden="true"></div>
 
-        <a href="https://github.com/ImashaFernando" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
+                <div class="image-circle">
+                    <img src="images/profile/profile.png" alt="Portrait of Imasha Fernando">
+                </div>
+            </div>
 
-        <a href="mailto:your@email.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-
-    </div>
-
-</div> 
-
-        <!-- Right Side -->
-<div class="hero-image">
-    <div class="image-circle">
-        <img src="images/profile/profile.png" alt="Profile">
-    </div>
-</div>
+            <p class="fig-caption">FIG. 01 — LAT 7.2906&deg; N / LONG 80.6337&deg; E, LK</p>
+        </div>
 
     </section>
+
     <!-- =========================
-     About Section
-========================= -->
+         About Section
+    ========================= -->
 
-<section id="about" class="about">
+    <section id="about" class="about">
 
-    <div class="about-container">
+        <div class="about-container">
 
-        <div class="about-right">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 02 — ABOUT</p>
 
-            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
 
-            <p>
-                I am an Information Systems Engineering undergraduate at
-                SLIIT with a passion for Business Analysis, Enterprise
-                Systems, and Full Stack Web Development.
-            </p>
-
-            <div class="about-info">
-
-                <div>
-                    <span>Name</span>
-                    <p>Imasha Fernando</p>
+                <div class="about-lead">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I am an Information Systems Engineering undergraduate at
+                        SLIIT with a passion for Business Analysis, Enterprise
+                        Systems, and Full Stack Web Development. I like sitting
+                        at the point where a business problem gets translated
+                        into a technical spec — then building the thing that
+                        actually solves it.
+                    </p>
                 </div>
 
-                <div>
-                    <span>University</span>
-                    <p>SLIIT</p>
+                <div class="about-info">
+
+                    <div class="spec-row">
+                        <span>Name</span>
+                        <p>Imasha Fernando</p>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>University</span>
+                        <p>SLIIT</p>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>Specialization</span>
+                        <p>Information Systems Engineering</p>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>Location</span>
+                        <p>Sri Lanka</p>
+                    </div>
+
                 </div>
 
-                <div>
-                    <span>Specialization</span>
-                    <p>Information Systems Engineering</p>
-                </div>
+            </div>
 
-                <div>
-                    <span>Location</span>
-                    <p>Sri Lanka</p>
-                </div>
+        </div>
 
+    </section>
+
+    <!-- =========================
+         Skills Section
+    ========================= -->
+
+    <section id="skills" class="skills">
+
+        <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 03 — TOOLING</p>
+            <h2>My Skills</h2>
+            <p class="section-sub">Technologies and tools I use to build modern applications.</p>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-java"></i><h3>Java</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-leaf"></i><h3>Spring Boot</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><h3>MySQL</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i><h3>Git</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i><h3>GitHub</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-figma"></i><h3>Figma</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3></div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Education Section
+    ========================= -->
+
+    <section id="education" class="education">
+
+        <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 04 — EDUCATION</p>
+            <h2>Education</h2>
+            <p class="section-sub">My academic background.</p>
+        </div>
+
+        <div class="education-container">
+
+            <div class="education-card">
+                <span class="education-year">2024 — Present</span>
+                <h3>BSc (Hons) in Information Technology</h3>
+                <h4>Specialization in Information Systems Engineering</h4>
+                <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-<!-- =========================
-     Skills Section
-========================= -->
+    <!-- =========================
+         Projects
+    ========================= -->
 
-<section id="skills" class="skills">
+    <section class="projects" id="projects">
 
-    <div class="section-heading">
-        <h2>My Skills</h2>
-        <p>Technologies and tools I use to build modern applications.</p>
-    </div>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <h3>HTML5</h3>
+        <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 05 — PROJECTS</p>
+            <h2>Projects</h2>
+            <p class="section-sub">Some of my featured academic and personal projects.</p>
         </div>
 
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <h3>CSS3</h3>
-        </div>
+        <div class="projects-container">
 
-        <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <h3>JavaScript</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
-            <h3>Java</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-leaf"></i>
-            <h3>Spring Boot</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <h3>MySQL</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <h3>Git</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
-            <h3>GitHub</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-figma"></i>
-            <h3>Figma</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <h3>Python</h3>
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================
-     Education Section
-========================= -->
-
-<section id="education" class="education">
-
-    <div class="section-heading">
-        <h2>Education</h2>
-        <p>My academic background.</p>
-    </div>
-
-    <div class="education-container">
-
-        <div class="education-card">
-
-            <span class="education-year">2024 - Present</span>
-
-            <h3>BSc (Hons) in Information Technology</h3>
-
-            <h4>Specialization in Information Systems Engineering</h4>
-
-            <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================
-     Projects
-========================= -->
-<section class="projects" id="projects">
-
-    <div class="section-heading">
-        <h2>Projects</h2>
-        <p>Some of my featured academic and personal projects.</p>
-    </div>
-
-    <div class="projects-container">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-
-            <div class="project-image">
-                <img src="images/projects/photography.png" alt="Photography System">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <span class="corner tl"></span><span class="corner br"></span>
+                <div class="project-image">
+                    <img src="images/projects/photography.png" alt="Photography System">
+                </div>
+                <div class="project-content">
+                    <h3>Photography Booking &amp; Management System</h3>
+                    <p>
+                        A web-based photography management system for handling
+                        bookings, packages, customers, payments and feedback.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Spring Boot</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>Thymeleaf</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ImashaFernando/Web-Based-Photography-Booking-Management-System"
+                           class="project-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-content">
-
-                <h3>Photography Booking & Management System</h3>
-
-                <p>
-                    A web-based photography management system for handling
-                    bookings, packages, customers, payments and feedback.
-                </p>
-
-                <div class="tech-stack">
-                    <span>Spring Boot</span>
-                    <span>Java</span>
-                    <span>MySQL</span>
-                    <span>Thymeleaf</span>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <span class="corner tl"></span><span class="corner br"></span>
+                <div class="project-image">
+                    <img src="images/projects/dashboard.png" alt="Dashboard">
                 </div>
-
-                <div class="project-buttons">
-                    <a href="https://github.com/ImashaFernando/Web-Based-Photography-Booking-Management-System"
-                       class="project-btn"
-                       target="_blank">
-                        <i class="fa-brands fa-github"></i> Source Code
-                    </a>
+                <div class="project-content">
+                    <h3>Business Analytics Dashboard</h3>
+                    <p>
+                        Interactive dashboard for visualizing sales,
+                        products and business performance.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Spring Boot</span>
+                        <span>Java</span>
+                        <span>Chart.js</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ImashaFernando/business-analytics-dashboard-system"
+                           class="project-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
                 </div>
-
             </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <span class="corner tl"></span><span class="corner br"></span>
+                <div class="project-image">
+                    <img src="images/projects/aiml.png" alt="AI ML">
+                </div>
+                <div class="project-content">
+                    <h3>Student Performance Prediction Using Machine Learning</h3>
+                    <p>
+                        Machine learning model that predicts student performance
+                        using supervised learning algorithms.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/gaveeshamadhushan/AIML-model-creation-Test"
+                           class="project-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <span class="corner tl"></span><span class="corner br"></span>
+                <div class="project-image">
+                    <img src="images/projects/iot.png" alt="Water Tank">
+                </div>
+                <div class="project-content">
+                    <h3>Smart Water Tank Monitoring System</h3>
+                    <p>
+                        IoT-based water tank monitoring system with real-time
+                        water level tracking and alerts.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Arduino</span>
+                        <span>ESP8266</span>
+                        <span>IoT</span>
+                        <span>Blynk</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ImashaFernando/Smart-Water-Tank-Monitoring-System"
+                           class="project-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
+        <!-- ==========================
+             CERTIFICATIONS
+        ========================== -->
 
-            <div class="project-image">
-                <img src="images/projects/dashboard.png" alt="Dashboard">
+        <section class="certifications" id="certifications">
+
+            <div class="section-heading">
+                <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 06 — CERTIFICATIONS</p>
+                <h2>Certifications</h2>
+                <p class="section-sub">Professional certifications and technical learning achievements.</p>
             </div>
 
-            <div class="project-content">
+            <div class="certifications-container">
 
-                <h3>Business Analytics Dashboard</h3>
-
-                <p>
-                    Interactive dashboard for visualizing sales,
-                    products and business performance.
-                </p>
-
-                <div class="tech-stack">
-                    <span>Spring Boot</span>
-                    <span>Java</span>
-                    <span>Chart.js</span>
-                    <span>MySQL</span>
+                <div class="certificate-card">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>AI/ML Engineer — Stage 1</h3>
+                    <p>CODE, SLIIT</p>
                 </div>
 
-                <div class="project-buttons">
-                    <a href="https://github.com/ImashaFernando/business-analytics-dashboard-system"
-                       class="project-btn"
-                       target="_blank">
-                        <i class="fa-brands fa-github"></i> Source Code
-                    </a>
+                <div class="certificate-card">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>AI/ML Engineer — Stage 2</h3>
+                    <p>CODE, SLIIT</p>
                 </div>
 
             </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="project-card">
+        </section>
 
-            <div class="project-image">
-                <img src="images/projects/aiml.png" alt="AI ML">
-            </div>
+    </section>
 
-            <div class="project-content">
-
-                <h3>Student Performance Prediction Using Machine Learning</h3>
-
-                <p>
-                    Machine learning model that predicts student performance
-                    using supervised learning algorithms.
-                </p>
-
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>Scikit-learn</span>
-                    <span>Pandas</span>
-                    <span>NumPy</span>
-                </div>
-
-                <div class="project-buttons">
-                    <a href="https://github.com/gaveeshamadhushan/AIML-model-creation-Test"
-                       class="project-btn"
-                       target="_blank">
-                        <i class="fa-brands fa-github"></i> Source Code
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-
-            <div class="project-image">
-                <img src="images/projects/iot.png" alt="Water Tank">
-            </div>
-
-            <div class="project-content">
-
-                <h3>Smart Water Tank Monitoring System</h3>
-
-                <p>
-                    IoT-based water tank monitoring system with real-time
-                    water level tracking and alerts.
-                </p>
-
-                <div class="tech-stack">
-                    <span>Arduino</span>
-                    <span>ESP8266</span>
-                    <span>IoT</span>
-                    <span>Blynk</span>
-                </div>
-
-                <div class="project-buttons">
-                    <a href="https://github.com/ImashaFernando/Smart-Water-Tank-Monitoring-System"
-                       class="project-btn"
-                       target="_blank">
-                        <i class="fa-brands fa-github"></i> Source Code
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
     <!-- ==========================
-     CERTIFICATIONS
-========================== -->
+         CONTACT
+    ========================== -->
 
-<section class="certifications" id="certifications">
+    <section class="contact" id="contact">
 
-    <div class="section-heading">
-        <h2>Certifications</h2>
-        <p>Professional certifications and technical learning achievements.</p>
-    </div>
+        <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>SHEET 07 — CONTACT</p>
+            <h2>Contact Me</h2>
+            <p class="section-sub">Let's connect and build something amazing together.</p>
+        </div>
 
-    <div class="certifications-container">
+        <div class="contact-container">
 
-        <div class="certificate-card">
+            <!-- Left Side -->
+            <div class="contact-info">
 
-            <i class="fa-solid fa-award"></i>
+                <h3>Get In Touch</h3>
 
-            <h3>AI/ML Engineer - Stage 1</h3>
+                <p>
+                    I'm currently seeking internship opportunities in Information
+                    Systems Engineering and Business Analysis. Feel free to reach
+                    out for collaborations, projects, or professional networking.
+                </p>
 
-            <p>CODE, SLIIT</p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:imashaudari412@gmail.com">imashaudari412@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/imasha-fernando412" target="_blank">
+                        linkedin.com/in/imasha-fernando412
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/ImashaFernando" target="_blank">
+                        github.com/ImashaFernando
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Sri Lanka</span>
+                </div>
+
+            </div>
+
+            <form id="contact-form" class="contact-form">
+
+                <input
+                    id="cf-name"
+                    name="user_name"
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    id="cf-email"
+                    name="user_email"
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    id="cf-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p id="form-status"></p>
+
+            </form>
 
         </div>
 
-        <div class="certificate-card">
+    </section>
 
-            <i class="fa-solid fa-award"></i>
+    <footer>
+        <h2><span class="logo-bracket">&lt;</span>IF<span class="logo-bracket">/&gt;</span></h2>
+        <p>&copy; 2026 Imasha Fernando. All Rights Reserved.</p>
+    </footer>
 
-            <h3>AI/ML Engineer - Stage 2</h3>
-
-            <p>CODE, SLIIT</p>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-     CONTACT
-========================== -->
-
-<section class="contact" id="contact">
-
-    <div class="section-heading">
-        <h2>Contact Me</h2>
-        <p>Let's connect and build something amazing together.</p>
-    </div>
-
-    <div class="contact-container">
-
-        <!-- Left Side -->
-
-        <div class="contact-info">
-
-            <h3>Get In Touch</h3>
-
-            <p>
-                I'm currently seeking internship opportunities in Information
-                Systems Engineering and Business Analysis. Feel free to reach
-                out for collaborations, projects, or professional networking.
-            </p>
-
-            <div class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:imashaudari412@gmail.com">
-                    imashaudari412@gmail.com
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/imasha-fernando412" target="_blank">
-                    linkedin.com/in/imasha-fernando412
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-brands fa-github"></i>
-                <a href="https://github.com/ImashaFernando" target="_blank">
-                    github.com/ImashaFernando
-                </a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Sri Lanka</span>
-            </div>
-
-        </div>
-
-        <!-- Right Side -->
- <form class="contact-form">
-
-    <input
-        type="text"
-        placeholder="Your Name"
-        required
-    >
-
-    <input
-        type="email"
-        placeholder="Your Email"
-        required
-    >
-
-    <textarea
-        rows="6"
-        placeholder="Your Message"
-        required
-    ></textarea>
-
-    <button type="submit">
-        Send Message
-    </button>
-
-</form>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <h2>&lt;IF/&gt;</h2>
-
-    <p>
-        © 2026 Imasha Fernando. All Rights Reserved.
-    </p>
-
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
